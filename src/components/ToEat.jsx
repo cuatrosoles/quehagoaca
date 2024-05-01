@@ -29,8 +29,8 @@ const responsive = {
 const ToEat = () => {
     // Bringing the Restaurant state from the Main context and saved into variable name 'places'
     const { restaurants: places } = useContext(MainContext);
-    
-    return ( 
+
+    return (
         <>
             { !places || places?.length < 1 ? (
                 // if places list is empty, render a Loader
@@ -39,7 +39,7 @@ const ToEat = () => {
                 // Places are ready, hence the element below is render
                 <div className="container mx-auto p-4">
                     <h2 className="font-semibold text-lg md:text-2xl">
-                        Place to Eat
+                        Lugares para comer
                     </h2>
                     <p className="text-sm text-dark mb-2">
                         These are some places you might want to visit
@@ -47,10 +47,10 @@ const ToEat = () => {
 
                     {/* OwlCarousel to Render Places in Carousel */}
                     <div className="relative -left-[20px]">
-                        <OwlCarousel nav stagePadding={20} 
-                            navClass={["navStyle", "navStyle"]} 
-                            navContainerClass="navContainerStyle" 
-                            responsive={responsive} 
+                        <OwlCarousel nav stagePadding={20}
+                            navClass={["navStyle", "navStyle"]}
+                            navContainerClass="navContainerStyle"
+                            responsive={responsive}
                             slideBy={4}
                             navText={[
                                 `<svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor">
@@ -75,5 +75,5 @@ const ToEat = () => {
         </>
      );
 }
- 
+
 export default ToEat;

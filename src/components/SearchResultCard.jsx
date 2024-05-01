@@ -2,7 +2,7 @@ import ReactStarsRating from "react-awesome-stars-rating";
 import { Link } from "react-router-dom";
 
 const SearchResultCard = ({ result }) => {
-    return ( 
+    return (
         <>
             {/* Search Result Object Card  */}
             { result?.result_object?.category?.key === 'geographic' ? (
@@ -10,15 +10,15 @@ const SearchResultCard = ({ result }) => {
                 <div className="block md:grid md:grid-cols-12 p-4 gap-3 border-b">
                     <div className="col-span-3 rounded overflow-hidden max-h-[200px] md:max-h-[150px] relative">
                         {/* Image displayed for Result Objcet, Check whether result has image and chooses which ever size available else a default image is displayed as fallback */}
-                        <img src={ result?.result_object?.photo ? ( 
+                        <img src={ result?.result_object?.photo ? (
                                     result?.result_object?.photo?.images?.large?.url || result?.result_object?.photo?.images?.original?.url ||
                                     result?.result_object?.photo?.images?.medium?.url || result?.result_object?.photo?.images?.small?.url
                                 ) : (
                                     'https://media-cdn.tripadvisor.com/media/photo-s/22/d9/7b/42/this-image-has-been-removed.jpg'
-                                )                                      
-                            } 
-                            alt={result?.result_object?.name} 
-                            className="object-cover h-full w-full" 
+                                )
+                            }
+                            alt={result?.result_object?.name}
+                            className="object-cover h-full w-full"
                         />
                         {/* --- */}
 
@@ -44,14 +44,14 @@ const SearchResultCard = ({ result }) => {
                                 {/* Reesult Object Rating (renders only if value is found), its rating value is passed into a ReactStarsRating component to render stars rating */}
                                 { result?.result_object?.rating && (
                                     <p className="flex items-center">
-                                        <ReactStarsRating 
-                                            value={Number(result?.result_object?.rating)} 
-                                            className="flex mr-2" size={15} 
-                                            isEdit={false} 
-                                            primaryColor="#00afef" 
-                                            secondaryColor="#e5e7eb" 
+                                        <ReactStarsRating
+                                            value={Number(result?.result_object?.rating)}
+                                            className="flex mr-2" size={15}
+                                            isEdit={false}
+                                            primaryColor="#00afef"
+                                            secondaryColor="#e5e7eb"
                                         />
-                                        { result?.result_object?.num_reviews?.toLocaleString() } reviews
+                                        { result?.result_object?.num_reviews?.toLocaleString() } comentarios
                                     </p>
                                 ) }
                                 {/* --- */}
@@ -63,7 +63,7 @@ const SearchResultCard = ({ result }) => {
                                 {/* --- */}
                             </div>
                         </div>
-                
+
                         {/* Review Snippet Displayed If Available */}
                         { (result?.review_snippet && result?.review_snippet?.snippet) && (
                             <div className="w-full self-end text-xs mmd:text-sm text-dark mt-5 mmd:mt-0 space-y-1">
@@ -89,15 +89,15 @@ const SearchResultCard = ({ result }) => {
                         <Link to={`${result?.result_object?.category?.key+'s'}/${result?.result_object?.location_id}`}>
                             <>
                                 {/* Image displayed for Result Objcet, Check whether result has image and chooses which ever size available else a default image is displayed as fallback */}
-                                <img src={ result?.result_object?.photo ? ( 
+                                <img src={ result?.result_object?.photo ? (
                                             result?.result_object?.photo?.images?.large?.url || result?.result_object?.photo?.images?.original?.url ||
                                             result?.result_object?.photo?.images?.medium?.url || result?.result_object?.photo?.images?.small?.url
                                         ) : (
                                             'https://media-cdn.tripadvisor.com/media/photo-s/22/d9/7b/42/this-image-has-been-removed.jpg'
-                                        )                                      
-                                    } 
-                                    alt={result?.result_object?.name} 
-                                    className="object-cover h-full w-full" 
+                                        )
+                                    }
+                                    alt={result?.result_object?.name}
+                                    className="object-cover h-full w-full"
                                 />
                                 {/* --- */}
 
@@ -126,14 +126,14 @@ const SearchResultCard = ({ result }) => {
                                 {/* Result Object rating (renders only if value is found), its rating value is passed into a ReactStarsRating component to render stars rating */}
                                 { result?.result_object?.rating && (
                                     <p className="flex items-center">
-                                        <ReactStarsRating 
-                                            value={Number(result?.result_object?.rating)} 
-                                            className="flex mr-2" size={15} 
-                                            isEdit={false} 
-                                            primaryColor="#00afef" 
-                                            secondaryColor="#e5e7eb" 
+                                        <ReactStarsRating
+                                            value={Number(result?.result_object?.rating)}
+                                            className="flex mr-2" size={15}
+                                            isEdit={false}
+                                            primaryColor="#00afef"
+                                            secondaryColor="#e5e7eb"
                                         />
-                                        { result?.result_object?.num_reviews?.toLocaleString() } reviews
+                                        { result?.result_object?.num_reviews?.toLocaleString() } comentarios
                                     </p>
                                 ) }
                                 {/* --- */}
@@ -145,7 +145,7 @@ const SearchResultCard = ({ result }) => {
                                 {/* --- */}
                             </div>
                         </div>
-                
+
                         {/* Review Snippet Displayed If Available */}
                         { (result?.review_snippet && result?.review_snippet?.snippet) && (
                             <div className="w-full self-end text-xs mmd:text-sm text-dark mt-5 mmd:mt-0 space-y-1">
@@ -165,8 +165,8 @@ const SearchResultCard = ({ result }) => {
                 </div>
             ) }
         </>
-        
+
      );
 }
- 
+
 export default SearchResultCard;

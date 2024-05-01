@@ -7,35 +7,35 @@ const Sidebar = ({ places }) => {
     // Bringing in all necessary state from MainContext
     const { rating, setRating, type, setType, isLoading } = useContext(MainContext);
 
-    return ( 
+    return (
         <div className="w-full">
             <div className="md:hidden grid grid-cols-2 gap-1 border-t border-gray-300 p-2 box-border fixed z-30 w-full bottom-0 bg-white text-sm font-medium">
                 <div className="col-span-1 space-y-1">
                     <p>Type</p>
                     {/* Select field for setting new value for 'type' state value */}
-                    <select 
-                        value={type} 
+                    <select
+                        value={type}
                         onChange={(e) => {setType(e.target.value)}}
                         className="focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md border border-gray-300 w-full p-2"
                     >
-                        <option value="restaurants" className="">Restaurant</option>
-                        <option value="hotels">Hotels</option>
-                        <option value="attractions">Attractions</option>
+                        <option value="restaurants" className="">Restaurants</option>
+                        <option value="hotels">Alojamientos</option>
+                        <option value="attractions">Atracciones</option>
                     </select>
                     {/* --- */}
                 </div>
                 <div className="col-span-1 space-y-1">
                     <p>Rating</p>
                     {/* Select field for setting new value for 'rating' state value */}
-                    <select 
-                        value={rating} 
+                    <select
+                        value={rating}
                         onChange={(e) => {setRating(e.target.value)}}
                         className="focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md border border-gray-300 w-full p-2"
                     >
-                        <option value={0}>All</option>
-                        <option value={3}>Above 3.0</option>
-                        <option value={4}>Above 4.0</option>
-                        <option value={4.5}>Above 4.5</option>
+                        <option value={0}>Todos</option>
+                        <option value={3}>Más de 3.0</option>
+                        <option value={4}>Más de 4.0</option>
+                        <option value={4.5}>Más de 4.5</option>
                     </select>
                     {/* --- */}
                 </div>
@@ -49,11 +49,11 @@ const Sidebar = ({ places }) => {
                     places?.map((place, i) => (
                         <PlaceDetails key={i} place={place} />
                     ))
-                )} 
+                )}
                 {/* --- */}
             </div>
         </div>
      );
 }
- 
+
 export default Sidebar;

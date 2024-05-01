@@ -5,15 +5,15 @@ import ReactStarsRating from 'react-awesome-stars-rating';
 const PlaceDetails = ({ place }) => {
     const [showInfo, setShowInfo] = useState(false);
 
-    return ( 
+    return (
         <div>
             <div className="w-full rounded-sm bg-white shadow-md overflow-hidden mb-5 relative z-10 cursor-pointer"
                 // onClick Event to display a pop-over of individual place details
                 onClick={() => !showInfo ? setShowInfo(true) : setShowInfo(false)}
             >
                 {/* Place Image displays Image if found else a default image is rendered as fallback */}
-                <img 
-                    src={place?.photo ? place?.photo?.images?.large?.url : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f7/49/68/hotel-bon-voyage.jpg?w=200&h=-1&s=1'} 
+                <img
+                    src={place?.photo ? place?.photo?.images?.large?.url : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f7/49/68/hotel-bon-voyage.jpg?w=200&h=-1&s=1'}
                     className="w-full h-[150px] object-cover"
                 />
                 {/* --- */}
@@ -27,14 +27,14 @@ const PlaceDetails = ({ place }) => {
                     <p className="my-2 text-sm">
                         {/* Place Rating with 'place.rating' value passed to generate a React Stars Rating element */}
                         <span className="flex items-center mb-2">
-                            <ReactStarsRating 
-                                value={place?.rating} 
-                                className="flex mr-2" size={20} 
-                                isEdit={false} 
-                                primaryColor="#00afef" 
-                                secondaryColor="#e5e7eb" 
+                            <ReactStarsRating
+                                value={place?.rating}
+                                className="flex mr-2" size={20}
+                                isEdit={false}
+                                primaryColor="#00afef"
+                                secondaryColor="#e5e7eb"
                             />
-                            ~ { place?.num_reviews } Reviews
+                            ~ { place?.num_reviews } Comentarios
                         </span>
                         {/* --- */}
 
@@ -55,7 +55,7 @@ const PlaceDetails = ({ place }) => {
                                 </svg>
 
                                 {/* Place Close/Open Status Diplay with an Open now fallback just incase no text is found in object */}
-                                { place?.open_now_text || 'Open Now' }
+                                { place?.open_now_text || 'Abierto ahora' }
                                 {/* --- */}
                             </p>
                         </button>
@@ -72,7 +72,7 @@ const PlaceDetails = ({ place }) => {
                                 { place.price }
                             </p>
                         </button>
-                    ) } 
+                    ) }
                     {/* --- */}
                 </div>
             </div>
@@ -88,7 +88,7 @@ const PlaceDetails = ({ place }) => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                             </svg>
                             <p>
-                                Return to Listing
+                                Regresar al listado
                             </p>
                         </div>
                         <img src={icon} alt="Traveladvisor" className="h-6 md:h-8 mr-3" />
@@ -105,20 +105,20 @@ const PlaceDetails = ({ place }) => {
                         <p className="my-2 text-sm flex flex-wrap">
                             {/* Place Rating with 'place.rating' value passed to generate a React Stars Rating element */}
                             <span className="flex items-center mr-2 mb-1">
-                                <ReactStarsRating 
-                                    value={place?.rating} 
-                                    className="flex mr-2" size={20} 
-                                    isEdit={false} 
-                                    primaryColor="#00afef" 
-                                    secondaryColor="#e5e7eb" 
+                                <ReactStarsRating
+                                    value={place?.rating}
+                                    className="flex mr-2" size={20}
+                                    isEdit={false}
+                                    primaryColor="#00afef"
+                                    secondaryColor="#e5e7eb"
                                 />
-                                { place?.num_reviews } Reviews
+                                { place?.num_reviews } Comentarios
                             </span>
                              {/*---  */}
 
                              {/* Place Ranking */}
                             <span className="mb-1">
-                                ~ { place?.ranking }    
+                                ~ { place?.ranking }
                             </span>
                             {/* --- */}
 
@@ -140,7 +140,7 @@ const PlaceDetails = ({ place }) => {
                                 </p>
                             ) }
                             {/* --- */}
-                            
+
                             {/* Place phone - displays only if found in place details */}
                             { place?.phone && (
                                 <p className="hidden md:flex items-center mr-2">
@@ -209,7 +209,7 @@ const PlaceDetails = ({ place }) => {
                                     </svg>
 
                                     {/* Place Close/Open Status Diplay with an Open now fallback just incase no text is found in object */}
-                                    { place.open_now_text || 'Open Now' }
+                                    { place.open_now_text || 'Abierto ahora' }
                                     {/* --- */}
                                 </p>
                             </button>
@@ -230,8 +230,8 @@ const PlaceDetails = ({ place }) => {
                         {/* --- */}
 
                         {/* Place Photo - displays only if found in place details else a default photo is displayed as fallback  */}
-                        <img 
-                            src={place?.photo ? place?.photo?.images?.original?.url : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f7/49/68/hotel-bon-voyage.jpg?w=200&h=-1&s=1'} 
+                        <img
+                            src={place?.photo ? place?.photo?.images?.original?.url : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f7/49/68/hotel-bon-voyage.jpg?w=200&h=-1&s=1'}
                             className="w-full h-[300px] object-cover rounded-t md:rounded my-2"
                         />
                         {/* --- */}
@@ -248,7 +248,7 @@ const PlaceDetails = ({ place }) => {
                                         {/* Telephone call anchor link */}
                                         <a href={`tel:${place?.phone}`}
                                             className="underline decoration-dotted decoration-gray-400">
-                                            Call
+                                            Llamar
                                         </a>
                                         {/* --- */}
                                     </p>
@@ -302,7 +302,7 @@ const PlaceDetails = ({ place }) => {
                                 {place?.description && (
                                     <>
                                         <h1 className="font-semibold text-lg md:text-2xl">
-                                            About
+                                            Acerca de
                                         </h1>
                                         <p className="text-base">
                                             { place?.description }
@@ -316,25 +316,25 @@ const PlaceDetails = ({ place }) => {
                             {(place?.awards?.length > 0 || place?.rating > 0 || place?.ranking ) && (
                                 <div className="col-span-1 bg-white border border-gray-200 p-4 my-1 mx-0 md:my-2 shadow-sm space-y-3 md:space-y-4">
                                     <h2 className="font-medium text-lg">
-                                       Ratings & Recognitions
+                                       Ratings & Reconocimientos
                                     </h2>
 
                                     {/* Place Rating with 'place.rating' value passed to generate a React Stars Rating element - displays only if found in place details  */}
-                                    {(place?.rating > 0 ) && ( 
+                                    {(place?.rating > 0 ) && (
                                         <p className="my-2 flex items-center text-sm">
-                                            <span className="font-semibold text-xl">{ place.rating }</span> 
-                                            <ReactStarsRating 
-                                                value={place.rating} 
-                                                className="flex mx-2" size={22} 
-                                                isEdit={false} 
-                                                primaryColor="#00afef" 
-                                                secondaryColor="#e5e7eb" 
+                                            <span className="font-semibold text-xl">{ place.rating }</span>
+                                            <ReactStarsRating
+                                                value={place.rating}
+                                                className="flex mx-2" size={22}
+                                                isEdit={false}
+                                                primaryColor="#00afef"
+                                                secondaryColor="#e5e7eb"
                                             />
-                                            { place?.num_reviews } Reviews
-                                        </p> 
+                                            { place?.num_reviews } Comentarios
+                                        </p>
                                     )}
                                     {/* --- */}
-                                    
+
                                     {/* Place ranking - displays only if found in place details */}
                                     {place?.ranking && (
                                         <p className="my-2 text-sm">
@@ -342,7 +342,7 @@ const PlaceDetails = ({ place }) => {
                                         </p>
                                     )}
                                     {/* --- */}
-                                    
+
                                     {/* Place awards - displays only if the award array has any item i.e. greater than 0 */}
                                     {(place?.awards?.length > 0) && (
                                         <div className="text-xs space-y-2">
@@ -361,7 +361,7 @@ const PlaceDetails = ({ place }) => {
                                                             <p className="ml-2 md:hidden">{ award?.display_name}</p>
                                                             {/* -- */}
                                                         </div>
-                                                        
+
                                                         {/* Award display name - Display only on hover of award Image. Only on Desktop, Hidden on Mobile */}
                                                         <div className="w-content hidden md:group-hover:block absolute bg-white border border-gray-200 shadow-md rounded-md p-2 mr-2 mb-2 -bottom-10 z-10">
                                                             <p className="ml-2 whitespace-nowrap">{ award?.display_name}</p>
@@ -373,25 +373,25 @@ const PlaceDetails = ({ place }) => {
                                             </div>
                                         </div>
                                     )}
-                                            
+
                                 </div>
-                            )}  
-                    
+                            )}
+
                             {/* Cuisines/Special Diets - Section display only if either cusine or diet restriction is found in place details */}
                             {(place?.cuisine || place?.dietary_restrictions) && (
                                 <div className="col-span-1 bg-white border border-gray-200 p-4 my-1 mx-0 md:my-2 shadow-sm space-y-3 md:space-y-4">
                                     <h2 className="font-medium text-lg">
-                                        Details
+                                        Detalles
                                     </h2>
 
                                     {/* Place cuisines - displays only if the cuisine array has any item i.e. greater than 0 */}
                                     {(place?.cuisine?.length > 0) && (
                                         <div className="text-xs space-y-2">
-                                            <h3 className="font-medium uppercase">Cuisine</h3>
+                                            <h3 className="font-medium uppercase">Cocina</h3>
                                             <p>
                                                 {/* Mapping through list of cuisines */}
                                                 {place?.cuisine?.map((type) => (
-                                                    <span 
+                                                    <span
                                                         className="bg-gray-200 rounded-full py-1 px-2 mb-2 mr-2 inline-block"
                                                         key={type?.key}>
                                                         {type?.name}
@@ -406,11 +406,11 @@ const PlaceDetails = ({ place }) => {
                                     {/* Place diet restriction - displays only if the diet restriction array has any item i.e. greater than 0 */}
                                     {(place?.dietary_restrictions?.length > 0) && (
                                         <div className="text-xs space-y-2">
-                                            <h3 className="font-medium uppercase">Special Diet</h3>
+                                            <h3 className="font-medium uppercase">Dieta Especial</h3>
                                             <p>
                                                 {/* Mapping through list of diet restriction */}
                                                 {place?.dietary_restrictions?.map((type) => (
-                                                    <span 
+                                                    <span
                                                         className="bg-gray-200 rounded-full py-1 px-2 mb-2 mr-2 inline-block"
                                                         key={type?.key}>
                                                         {type?.name}
@@ -429,7 +429,7 @@ const PlaceDetails = ({ place }) => {
                             {( place?.phone || place?.email || place?.website ) && (
                                 <div className="col-span-1 bg-white border border-gray-200 p-4 my-1 mx-0 md:my-2 shadow-sm space-y-3 md:space-y-4">
                                     <h2 className="font-medium text-lg">
-                                        Contact Details
+                                        Detalles de Contacto
                                     </h2>
 
                                     {/* Place address - displays only if found in place details */}
@@ -444,7 +444,7 @@ const PlaceDetails = ({ place }) => {
                                         </p>
                                     ) }
                                     {/* --- */}
-                                    
+
                                     {/* Place phone - displays only if found in place details */}
                                     { place?.phone && (
                                         <p className="flex items-center mr-2 text-sm">
@@ -508,7 +508,7 @@ const PlaceDetails = ({ place }) => {
                                         </p>
                                     ) }
                                     {/* --- */}
-                                            
+
                                 </div>
                             )}
                         </div>
@@ -521,5 +521,5 @@ const PlaceDetails = ({ place }) => {
         </div>
      );
 }
- 
+
 export default PlaceDetails;
