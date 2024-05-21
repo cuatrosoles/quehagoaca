@@ -85,20 +85,20 @@ export function useSettings() {
 }
 
 export default function Settings({ children }: { children: React.ReactNode }) {
-    const [layout, setLayout] = React.useState<LayoutType>("rows");
+    const [layout, setLayout] = React.useState<LayoutType>("masonry");
     const [count, setCount] = React.useState(photos.length);
-    const [targetRowHeight, setTargetRowHeight] = React.useState(300);
-    const [columns, setColumns] = React.useState(5);
-    const [spacing, setSpacing] = React.useState(30);
+    const [targetRowHeight, setTargetRowHeight] = React.useState(240);
+    const [columns, setColumns] = React.useState(4);
+    const [spacing, setSpacing] = React.useState(10);
     const [padding, setPadding] = React.useState(10);
-    const [width, setWidth] = React.useState(100);
+    const [width, setWidth] = React.useState(80);
 
     useLayoutEffect(() => {
         const viewportSize = window.innerWidth;
-        setColumns(viewportSize < 480 ? 2 : viewportSize < 900 ? 3 : 5);
-        setSpacing(viewportSize < 480 ? 10 : viewportSize < 900 ? 20 : 30);
-        setPadding(viewportSize < 480 ? 10 : viewportSize < 900 ? 20 : 30);
-        setTargetRowHeight(viewportSize < 480 ? 100 : viewportSize < 900 ? 150 : 200);
+        setColumns(viewportSize < 480 ? 2 : viewportSize < 900 ? 3 : 4);
+        setSpacing(viewportSize < 480 ? 8 : viewportSize < 900 ? 8 : 10);
+        setPadding(viewportSize < 480 ? 10 : viewportSize < 900 ? 10 : 12);
+        setTargetRowHeight(viewportSize < 480 ? 80 : viewportSize < 900 ? 120 : 180);
     }, []);
 
     const settings = React.useMemo(
