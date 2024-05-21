@@ -12,6 +12,8 @@ import img11 from "./img/imagenes/img11.jpg";
 import img12 from "./img/imagenes/img12.jpg";
 import img13 from "./img/imagenes/img13.jpg";
 import img14 from "./img/imagenes/img14.jpg";
+import img15 from "./img/imagenes/img05.jpg";
+import img16 from "./img/imagenes/img06.jpg";
 
 
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
@@ -32,6 +34,8 @@ const unsplashPhotos = [
     { id: img12, width: 1080, height: 1620 },
     { id: img13, width: 1080, height: 720 },
     { id: img14, width: 1080, height: 1440 },
+    { id: img15, width: 1080, height: 607 },
+    { id: img16, width: 1080, height: 608 },
 ];
 
 const photos = unsplashPhotos.map((photo) => ({
