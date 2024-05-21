@@ -2,6 +2,7 @@ import { useContext } from "react";
 import PlaceCard from "./PlaceCard";
 import { PlaceCardLoader } from "./loaders";
 import { MainContext } from "../context/MainContext";
+import PhotoAlbum from "react-photo-album";
 
 const photos = [
     { src: "/img/imagenes/img01.jpg", width: 800, height: 600 },

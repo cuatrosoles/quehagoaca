@@ -3,7 +3,6 @@ import { Navbar, WhereTo, Gallery, ToVisit, ToEat, ToStay, Footer } from '../com
 import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
 import botb from "../img/botb_mark.svg";
-import PhotoAlbum from "react-photo-album";
 
 
 const Inicio = () => {
