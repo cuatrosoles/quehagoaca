@@ -42,8 +42,8 @@ function Gallery() {
 
 export default function App() {
   return (
-    <Settings>
+
       <Gallery />
-    </Settings>
+
   );
 }
