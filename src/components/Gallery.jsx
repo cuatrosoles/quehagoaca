@@ -8,6 +8,6 @@ const photos = [
     { src: "/img/imagenes/img02.jpg", width: 1600, height: 900 },
   ];
 
-export function Gallery() {
+export default function Gallery() {
     return <PhotoAlbum layout="rows" photos={photos} />;
 }
