@@ -1,5 +1,4 @@
 export {default as Inicio} from './Inicio';
-export {default as Gallery} from './Gallery';
 export {default as Home} from './Home';
 export {default as MapView} from './MapView';
 export {default as HotelsList} from './HotelsList';
