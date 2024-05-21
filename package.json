@@ -19,7 +19,11 @@
     "react-photo-album": "^2.3.1",
     "react-router-dom": "^5.3.0",
     "tw-elements": "^1.0.0-alpha12",
-    "@mui/material": "^5.15.14"
+    "@mui/material": "^5.15.14",
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
