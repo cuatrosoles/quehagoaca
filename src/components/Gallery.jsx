@@ -8,7 +8,7 @@ function Gallery() {
   const { photos, layout, columns, targetRowHeight, spacing, padding, width } = useSettings();
 
   const renderPhoto = React.useCallback(
-    ({ imageProps: { alt, style, ...rest } }: RenderPhotoProps) => (
+    ({ imageProps: { alt, style, ...rest } }, RenderPhotoProps) => (
       <img
         alt={alt}
         style={{
