@@ -17,23 +17,7 @@ import img11 from "../img/imagenes/img11.jpg";
 import img12 from "../img/imagenes/img12.jpg";
 import img13 from "../img/imagenes/img13.jpg";
 import img14 from "../img/imagenes/img14.jpg";
-
-const photos = [
-    { src: img01 },
-    { src: img02 },
-    { src: img03 },
-    { src: img04 },
-    { src: img05 },
-    { src: img06 },
-    { src: img07 },
-    { src: img08 },
-    { src: img09 },
-    { src: img10 },
-    { src: img11 },
-    { src: img12 },
-    { src: img13 },
-    { src: img14 },
-  ];
+import photos from "./photos.ts";
 
 export default function Gallery() {
     return <PhotoAlbum layout="masonry" photos={photos} />;
