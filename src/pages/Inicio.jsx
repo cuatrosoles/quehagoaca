@@ -19,9 +19,6 @@ const Inicio = () => {
         { src: "/img/imagenes/img02.jpg", width: 1600, height: 900 },
       ];
 
-    export default function Gallery() {
-        return <PhotoAlbum layout="rows" photos={photos} />;
-    }
 
     return (
         <>
@@ -182,6 +179,10 @@ const Inicio = () => {
 
         </>
      );
+}
+
+export default function Gallery() {
+    return <PhotoAlbum layout="rows" photos={photos} />;
 }
 
 export default Inicio;
