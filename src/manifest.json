@@ -3,22 +3,22 @@
   "name": "Descubre todo lo bueno, cerca.",
   "icons": [
     {
-      "src": "../src/img/favicon.png",
+      "src": "../img/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "../src/img/logo192.png",
+      "src": "../img/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "../src/img/logo512.png",
+      "src": "../img/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "./../index.html",
+  "start_url": "../../index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
