@@ -18,7 +18,8 @@
     "react-owl-carousel": "^2.3.3",
     "react-photo-album": "^2.3.1",
     "react-router-dom": "^5.3.0",
-    "tw-elements": "^1.0.0-alpha12"
+    "tw-elements": "^1.0.0-alpha12",
+    "@mui/material": "^5.15.14"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
