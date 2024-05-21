@@ -3,6 +3,8 @@ import { Navbar, WhereTo, ToVisit, ToEat, ToStay, Footer } from '../components';
 import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
 import botb from "../img/botb_mark.svg";
+import PhotoAlbum from "react-photo-album";
+
 
 const Inicio = () => {
     // Inicio Page Trending in Travel toggle state
@@ -12,11 +14,25 @@ const Inicio = () => {
         toStay: false //Places to staty
     })
 
+    const photos = [
+        { src: "/img/imagenes/img01.jpg", width: 800, height: 600 },
+        { src: "/img/imagenes/img02.jpg", width: 1600, height: 900 },
+      ];
+
+    export default function Gallery() {
+        return <PhotoAlbum layout="rows" photos={photos} />;
+    }
+
     return (
         <>
             {/* Navbar with Sticky poperty */}
             <Navbar sticky />
             {/* --- */}
+
+            {/* Galeria */}
+            <Gallery />
+            {/* --- */}
+
 
             {/* Search Form - Where to */}
             {/* <WhereTo /> */}
