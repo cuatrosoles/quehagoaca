@@ -17,7 +17,7 @@ import img11 from "../img/imagenes/img11.jpg";
 import img12 from "../img/imagenes/img12.jpg";
 import img13 from "../img/imagenes/img13.jpg";
 import img14 from "../img/imagenes/img14.jpg";
-import photos from "./photos.ts";
+import photos from "../photos.ts";
 
 export default function Gallery() {
     return <PhotoAlbum layout="masonry" photos={photos} />;
