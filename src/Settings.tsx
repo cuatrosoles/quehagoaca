@@ -1,15 +1,11 @@
 import * as React from "react";
 import { LayoutType, Photo } from "react-photo-album";
-
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Slider from "@mui/material/Slider";
-import MenuItem from "@mui/material/MenuItem";
-import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
+import photos from "./photos2";
 
-import photos from "./photos";
 
 const useLayoutEffect = typeof document !== "undefined" ? React.useLayoutEffect : React.useEffect;
 
