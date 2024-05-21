@@ -26,7 +26,8 @@ function Gallery() {
   );
 
   return (
-    <Box sx={{ width: `${width}%`, mx: "auto" }}>
+    ///<Box sx={{ width: `${width}%`, mx: "auto" }}>
+    <Box sx={{ width: `100%`, mx: "auto", my: 20 }}>
       <PhotoAlbum
         photos={photos}
         layout={layout}
