@@ -1,8 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { PhotoAlbum, RenderPhotoProps } from "react-photo-album";
-
-import Settings, { useSettings } from "./Settings";
+import Settings, { useSettings } from "../Settings";
 
 function Gallery() {
   const { photos, layout, columns, targetRowHeight, spacing, padding, width } = useSettings();
