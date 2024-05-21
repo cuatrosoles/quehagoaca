@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar, WhereTo, ToVisit, ToEat, ToStay, Footer } from '../components';
+import { Navbar, WhereTo, Gallery, ToVisit, ToEat, ToStay, Footer } from '../components';
 import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
 import botb from "../img/botb_mark.svg";
@@ -13,12 +13,6 @@ const Inicio = () => {
         toDo: false, //Things to Do state
         toStay: false //Places to staty
     })
-
-    const photos = [
-        { src: "/img/imagenes/img01.jpg", width: 800, height: 600 },
-        { src: "/img/imagenes/img02.jpg", width: 1600, height: 900 },
-      ];
-
 
     return (
         <>
@@ -179,10 +173,6 @@ const Inicio = () => {
 
         </>
      );
-}
-
-export default function Gallery() {
-    return <PhotoAlbum layout="rows" photos={photos} />;
 }
 
 export default Inicio;
