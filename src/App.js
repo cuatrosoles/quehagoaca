@@ -13,7 +13,6 @@ import {PlaceDetails} from './pages/templates';
 
 const App = () => {
   return (
-    <>
     <BrowserRouter>
       <Switch>
         <Route exact path={'/'}>
@@ -42,7 +41,6 @@ const App = () => {
         </Route>
       </Switch>
     </BrowserRouter>
-    </>
   );
 };
 
