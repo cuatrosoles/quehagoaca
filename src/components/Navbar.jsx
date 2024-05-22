@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from '../img/logo.png';
 import { Link } from "react-router-dom";
+import InstallPWA from "./InstallPWA";
 
 const Navbar = ({ sticky, border }) => {
+
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -23,6 +25,10 @@ const Navbar = ({ sticky, border }) => {
                 {/*  */}
 
                 <ul className="hidden mmd:flex space-x-1">
+
+                    <InstallPWA></InstallPWA>
+
+
                     {/* Link to Hotels Route */}
                     <Link to={"/hotels"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">

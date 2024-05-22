@@ -5,6 +5,7 @@
     "include": [
         "src",
         "src/declaration.d.ts",
-        "public/main.jsx",
-    ]
+        "src/main.jsx",
+    ],
+    "exclude": []
 }

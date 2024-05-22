@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navbar, WhereTo, Gallery, ToVisit, ToEat, ToStay, Footer } from '../components';
 import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
-import botb from "../img/botb_mark.svg";
+import botb from "../img/botb_mark.png";
 
 
 const Inicio = () => {

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from '../src/App'
+import App from './App'
 import { BrowserRouter as Router } from "react-router-dom"
-import { MainContextProvider } from "../src/context/MainContext"
-import * as serviceWorkerRegistration from '../src/serviceWorkerRegistration';
+import { MainContextProvider } from "./context/MainContext"
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
   <MainContextProvider>

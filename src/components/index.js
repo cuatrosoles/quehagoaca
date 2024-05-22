@@ -1,4 +1,5 @@
 export {default as Navbar} from './Navbar';
+export {default as InstallPWA} from './InstallPWA';
 export {default as Gallery} from './Gallery';
 export {default as WhereTo} from './WhereTo';
 export {default as ToStay} from './ToStay';

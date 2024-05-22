@@ -1,5 +1,5 @@
 import { useState } from "react";
-import icon from '../../img/favicon.svg';
+import icon from '../../img/icon.png';
 import ReactStarsRating from 'react-awesome-stars-rating';
 
 const PlaceDetails = ({ place }) => {

@@ -1,11 +1,11 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Inicio, Home, HotelsList, MapView, RestaurantsList, AttractionsList, SearchResult } from "./pages";
 import { PlaceDetails } from "./pages/templates";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Switch>
       <Route exact path={"/"}>
           <Inicio />
@@ -32,7 +32,7 @@ const App = () => {
           <PlaceDetails />
         </Route>
       </Switch>
-    </>
+    </BrowserRouter>
   )
 }
 
