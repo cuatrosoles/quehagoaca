@@ -28,8 +28,7 @@ const InstallPWA = () => {
     return null;
   }
   return (
-    <img
-      src={imgbutton} width="100" height="65"
+    <button
       className="link-button"
       id="setup_button"
       aria-label="Install app"
@@ -37,7 +36,7 @@ const InstallPWA = () => {
       onClick={onClick}
     >
       Instalar App
-    </img>
+    </button>
   );
 };
 
