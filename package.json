@@ -1,7 +1,7 @@
 {
   "name": "que-hago-aca",
   "private": true,
-  "version": "0.9.0",
+  "version": "0.9.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,6 +19,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.3.0",
+    "sharp": "^0.33.4",
     "tw-elements": "^1.0.0-alpha12"
   },
   "devDependencies": {
