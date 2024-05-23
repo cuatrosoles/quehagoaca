@@ -1,16 +1,13 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Inicio, Home, HotelsList, MapView, RestaurantsList, AttractionsList, SearchResult } from "./pages";
+import { Switch, Route } from "react-router-dom";
+import { Home, HotelsList, MapView, RestaurantsList, AttractionsList, SearchResult } from "./pages";
 import { PlaceDetails } from "./pages/templates";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Switch>
-      <Route exact path={"/"}>
-          <Inicio />
-        </Route>
-        <Route exact path={"/home"}>
+        <Route exact path={"/"}>
           <Home />
         </Route>
         <Route path={"/map"}>
@@ -32,7 +29,7 @@ const App = () => {
           <PlaceDetails />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </>
   )
 }
 

@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Navbar, WhereTo, ToVisit, ToEat, ToStay, Footer } from '../components';
 import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
-import botb from "../img/botb_mark.png";
+import botb from "../img/botb_mark.svg";
 
 const Home = () => {
-    // Home Page Trending in Travel toggle state
+    // Home Page Trending in Travel toggle state 
     const [toggle, setToggle] = useState({
         toGo: true, // Place to Go state, active by defaul
         toDo: false, //Things to Do state
         toStay: false //Places to staty
     })
 
-    return (
+    return ( 
         <>
             {/* Navbar with Sticky poperty */}
             <Navbar sticky />
@@ -167,5 +167,5 @@ const Home = () => {
         </>
      );
 }
-
+ 
 export default Home;

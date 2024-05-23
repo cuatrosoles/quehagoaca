@@ -5,25 +5,25 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .travel_toggle::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .navContainerStyle {
-  @apply flex justify-between absolute top-1/3 w-full
+    @apply flex justify-between absolute top-1/3 w-full
 }
 
 .disabled {
-  @apply invisible
+    @apply invisible
 }
 
 .navStyle {
-  @apply rounded-full bg-white h-10 w-10 flex items-center justify-center border-2 border-black p-1 hover:text-white hover:bg-black
+    @apply rounded-full bg-white h-10 w-10 flex items-center justify-center border-2 border-black p-1 hover:text-white hover:bg-black
 }
 
 .container {
-  @apply w-full max-w-[1200px]
+    @apply w-full max-w-[1200px]
 }
