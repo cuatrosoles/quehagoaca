@@ -25,9 +25,6 @@ const Navbar = ({ sticky, border }) => {
 
                 <ul className="hidden mmd:flex space-x-1">
 
-                    {/* Link to Install PWA */}
-                    <InstallPWA>Instalar</InstallPWA>
-
                     {/* Link to Hotels Route */}
                     <Link to={"/hotels"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">
@@ -108,9 +105,6 @@ const Navbar = ({ sticky, border }) => {
             {/* Menu For Only Mobile */}
             {isMenuToggled && (
                 <div className="flex flex-col mmd:hidden bg-white shadow-md absolute animate-slide-in right-0">
-
-                    {/* Link to Install PWA */}
-                    <InstallPWA>Instalar</InstallPWA>
 
                     {/* Link to hotel Route */}
                     <Link to={"/hotels"}>

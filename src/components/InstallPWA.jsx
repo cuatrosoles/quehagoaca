@@ -35,7 +35,8 @@ const InstallPWA = () => {
       title="Instalar App"
       onClick={onClick}
     >
-      Instalar App
+      <img src={imgbutton} width="160" alt="Instalar la Aplicacion"/>
+      <label>Instalar App</label>
     </button>
   );
 };
