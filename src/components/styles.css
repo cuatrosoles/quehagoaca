@@ -1,12 +1,19 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
+.bottom-right1 {
+    position: absolute;
+    bottom: 50px;
+    right: 5px;
 }
 
-.bottom-right {
+.bottom-right2 {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 25px;
+    right: 5px;
+}
+
+.bottom-right3 {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
 }
 
 .centered {
@@ -16,12 +23,32 @@
     transform: translate(-50%, -50%);
 }
 
-.overlay-text {
+.overlay-text1 {
     color: white;
-    font: bold 24px/45px Helvetica, Sans-Serif;
+    font: 12px/24px Sans-Serif, Helvetica;
     letter-spacing: -1px;
     background: rgb(0, 0, 0);
     /* fallback color */
     background: rgba(0, 0, 0, 0.4);
-    padding: 3px;
+    padding: 2px;
+}
+
+.overlay-text2 {
+    color: white;
+    font: bold 10px/20px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px;
+}
+
+.overlay-text3 {
+    color: white;
+    font: 8px/18px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px;
 }
